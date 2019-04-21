@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TimerMachine</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="time_finish">終了まで</string>
+    <string name="time_remain">残り</string>
+    <string name="time_unit_day">日</string>
+    <string name="time_unit_hour">時間</string>
+    <string name="time_unit_minutes">分</string>
+    <string name="time_unit_second">秒</string>
+</resources>
