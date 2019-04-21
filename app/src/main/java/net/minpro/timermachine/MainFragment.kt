@@ -30,10 +30,9 @@ class MainFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(activity!!).get(MainViewModel::class.java)
-
         viewModel.initParameters()
-
         observeViewModel()
+        viewModel.countDownStart()
     }
 
     private fun observeViewModel() {
