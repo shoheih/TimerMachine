@@ -14,11 +14,10 @@ class MainViewModel: ViewModel() {
 
     lateinit var timerCountDown: Timer
 
-
     fun initParameters() {
         currentYear.value = 2019
         displayYear.value = currentYear.value.toString()
-        currentTime.value = 10
+        currentTime.value = 3 * 60
         displayTime.value = currentTime.value.toString()
     }
 

@@ -1,43 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             xmlns:tools="http://schemas.android.com/tools"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent"
-                                             tools:context=".MainFragment" android:id="@+id/time_container">
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/linearLayout"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textYear" android:textSize="36sp"
-                android:gravity="center"/>
-        <TextView
-                android:text="@string/time_finish"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textFinish" android:textSize="18sp"
-                android:textAlignment="center" android:gravity="center" android:padding="@dimen/fab_margin"/>
+
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="net.minpro.timermachine.MainViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainFragment"
+            android:id="@+id/time_container">
         <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/linearLayout"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
             <TextView
-                    android:text="@string/time_remain"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content" android:id="@+id/textRemain" android:layout_weight="1"
-                    android:gravity="center"/>
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textYear" android:textSize="36sp"
+                    android:gravity="center"
+                    android:text="@{viewmodel.displayYear}"/>
             <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content" android:id="@+id/textTime" android:layout_weight="4"
-                    android:gravity="center" android:textSize="18sp"/>
-            <TextView
-                    android:text="@string/time_unit_second"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content" android:id="@+id/textUnit" android:layout_weight="1"
-                    android:gravity="center"/>
+                    android:text="@string/time_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textFinish" android:textSize="18sp"
+                    android:textAlignment="center" android:gravity="center" android:padding="@dimen/fab_margin"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="@string/time_remain"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:id="@+id/textRemain" android:layout_weight="1"
+                        android:gravity="center"/>
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:id="@+id/textTime" android:layout_weight="4"
+                        android:gravity="center" android:textSize="18sp"
+                        android:text="@{viewmodel.displayTime}"/>
+                <TextView
+                        android:text="@string/time_unit_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:id="@+id/textUnit" android:layout_weight="1"
+                        android:gravity="center"/>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
