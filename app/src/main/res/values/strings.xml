@@ -10,4 +10,11 @@
     <string name="time_unit_hour">時間</string>
     <string name="time_unit_minutes">分</string>
     <string name="time_unit_second">秒</string>
+
+    <string-array name="sex_list">
+        <item>北川景子</item>
+        <item>永野芽郁</item>
+        <item>石原さとみ</item>
+        <item>有村架純</item>
+    </string-array>
 </resources>

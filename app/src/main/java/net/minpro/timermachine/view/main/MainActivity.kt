@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import net.minpro.timermachine.R
+import net.minpro.timermachine.view.dialog.SexSelectDialog
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         btmNavi.setOnNavigationItemSelectedListener { item ->
             when(item.itemId) {
                 R.id.item_select_a -> {
+                    SexSelectDialog().show(supportFragmentManager, "sex")
                     true
                 }
                 R.id.item_select_b -> {
