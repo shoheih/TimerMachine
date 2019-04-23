@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="セックス" android:id="@+id/item_select_a" android:icon="@drawable/ic_wc_black_24dp"/>
+    <item android:title="フェラ" android:id="@+id/item_select_b" android:icon="@drawable/ic_pregnant_woman_black_24dp"/>
+    <item android:title="69" android:id="@+id/item_select_c" android:icon="@drawable/ic_android_black_24dp"/>
+</menu>

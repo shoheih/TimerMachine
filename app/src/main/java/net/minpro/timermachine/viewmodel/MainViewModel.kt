@@ -1,4 +1,4 @@
-package net.minpro.timermachine
+package net.minpro.timermachine.viewmodel
 
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
