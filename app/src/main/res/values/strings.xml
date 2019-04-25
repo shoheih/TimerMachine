@@ -11,7 +11,13 @@
     <string name="time_unit_minutes">分</string>
     <string name="time_unit_second">秒</string>
 
-    <string-array name="sex_list">
+    <string name="theme_kitagawa">北川景子（30）</string>
+    <string name="theme_nagano">永野芽郁（19）</string>
+    <string name="theme_ishihara">石原さとみ（30）</string>
+    <string name="theme_arimura">有村架純（26）</string>
+
+    <string name="select_theme">女の子を選んでください</string>
+    <string-array name="femail_list">
         <item>北川景子</item>
         <item>永野芽郁</item>
         <item>石原さとみ</item>

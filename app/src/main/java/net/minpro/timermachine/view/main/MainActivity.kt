@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import net.minpro.timermachine.R
 import net.minpro.timermachine.view.dialog.SexSelectDialog
+import net.minpro.timermachine.view.dialog.ThemeSelectDialog
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.item_select_b -> {
+                    ThemeSelectDialog().show(supportFragmentManager, "theme")
                     true
                 }
                 R.id.item_select_c -> {
